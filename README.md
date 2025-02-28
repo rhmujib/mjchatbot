@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FAQ Chatbot
 
 FAQ Chatbot
@@ -97,3 +98,6 @@ Feel free to submit issues or pull requests for improvements or bug fixes.
 ## License
 
 This project is licensed under the MIT License.
+=======
+# mjchatbot
+>>>>>>> 621f7f5120db442f666fd9a8e140c5b65a82b7d1
