@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mjbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Chats</h2>
+            <ul id="chat-list">
+                <!-- Chat list items will be dynamically added here -->
+            </ul>
+            <input type="text" id="new-chat-name" placeholder="Enter chat name" class="new-chat-input" />
+            <button id="new-chat-button" class="new-chat-button">New Chat</button>
+        </div>
+        <div class="chat-container">
+            <div class="header">
+                <h1>mjbot</h1>
+                <button id="toggle-dark-mode" class="icon-button">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="message bot-message">Hello! How can I assist you today? 😊</div>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
